@@ -331,6 +331,11 @@ a:visited:hover {
   background-color: #ddd;
   border-top: 6px solid #EEEEEE;
 }
+#faq .fb {
+  border-bottom: 1px dotted #AAAAAA;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
 #faq ul {
   padding: 0;
   list-style: none;
