@@ -40,6 +40,15 @@ body {
     font-family: @sans;
 }
 
+a {
+    color: @orange;
+    text-decoration: none;
+    &:hover {
+        color: darken(@orange, 10%);
+        text-decoration: underline;
+    }
+}
+
 .container {
     max-width: 1000px;
     margin: auto;
@@ -198,7 +207,6 @@ body {
                     text-decoration: none;
                     &:hover {
                         color: darken(@orange, 10%);
-                        text-decoration: underline;
                     }
                 }
                 &:before {
@@ -235,14 +243,6 @@ body {
                 color: #555555;
                 font-size: 0.9em;
                 padding-top: 12px;
-                .links a {
-                    color: @orange;
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                        color: darken(@orange, 10%);
-                    }
-                }
             }
         }
     }
@@ -251,9 +251,6 @@ body {
 #open-div {
     padding: 10px;
     margin-bottom: 20px;
-    a {
-        color: @orange;
-    }
     & > p {
         color: #555555;
         font-size: 0.9em;
