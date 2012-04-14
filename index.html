@@ -58,16 +58,17 @@
       <li>
         <strong class="logo openSIS"><span>open</span>SIS</strong>
         <div class="desc">
-          RIT has begun to roll out parts of its new geneSIS project, which is built on PeopleSoft. We can't replace the entire system, however we can build a
-          useable UI for discovering classes. We can make finding awesome classes and building the perfect schedule as simple as it should be.
+          RIT has begun to roll out parts of its new geneSIS project, which is built on PeopleSoft. We can't replace the entire system, however we can build a useable UI for discovering classes. We can make finding awesome classes and building the perfect schedule as simple as it should be.
           <div class="links">
             <a href="#email"><b>View Project</b></a> &middot;
             <a href="#email"><b>Get Involved</b></a> &middot;
             <a href="#email">Code</a> &middot;
             <a href="#email">Bug Tracker</a> &middot;
             <a href="#email">Forums</a>
+            <a href="#email">IRC</a>
           </div>
-          <div class="note"><strong>Get Involved!</strong> We're currently taking applications for module owners. <a href="#">View Open Positions &raquo;</a></div>
+          <a href="#open-div" id="open" class="note"><strong>Get Involved!</strong> We're currently taking applications for module owners. <u>View Open Positions
+              &raquo;</u></a></div>
         </div>
       </li>
     </ul>
@@ -108,6 +109,82 @@
     <a href="https://github.com/gkoberger/openRIT/">On GitHub</a>
 
     </section>
+
+    <form id="open-div" style="display: none" method="POST">
+      <p>Module owners are in charge of managing and contributing heavily to the parts of the site they "own". You may apply for as many as you want, and can be
+      the module owner for multiple modules. Don't think you're ready to be a module owner? You can still <a href="#email" class="signup">sign up to help out</a>.</p>
+      <ul id="modules">
+        <li>
+          <label for="m-browse">
+            <input type="checkbox" id="m-browse" name="m-browse">
+            <strong>Browsing and Searching</strong>
+            <span>Skills: Python, Lucene based search, Git</span>
+            <p>Browsing and searching is going to be the core of the site. We need someone with good knowledge of Elastic Search or something similar. Courses
+            will be searched, sorted and filtered heavily.</p>
+          </label>
+          <label for="m-schedule">
+            <input type="checkbox" id="m-schedule" name="m-schedule">
+            <strong>Schedule Maker</strong>
+            <span>Skills: Python, HTML, JavaScript, CSS, Git</span>
+            <p>We want two types of schedule maker &mdash; short term (like the schedule maker) and long term (like TigerTracks).</p>
+          </label>
+          <label for="m-reccomend">
+            <input type="checkbox" id="m-recommend" name="m-recommend">
+            <strong>Course Recommendations</strong>
+            <span>Skills: Python, HTML, JavaScript, CSS, Git</span>
+            <p>We'll know what courses every student takes, and if they liked it or not. Using this data, combined with what a student needs to take to
+            graduate, we should be able to provide awesome recommendations.</p>
+          </label>
+          <label for="m-reviews">
+            <input type="checkbox" id="m-reviews" name="m-reviews">
+            <strong>Course/Professor Reviews</strong>
+            <span>Skills: Python, HTML, JavaScript, CSS, Git</span>
+            <p>We want everything to be on one place. So, we'll want to have our own professor and course reviews. We'll use these reviews to help students
+            figure out courses to take.</p>
+          </label>
+          <label for="m-design">
+            <input type="checkbox" id="m-design" name="m-design">
+            <strong>Design</strong>
+            <span>Skills: Photoshop or similar; Usability</span>
+            <p>The biggest weakness of the current SIS system isn't the infastructure &mdash; it's the design. We need someone with a strong sense of design to
+            help build a cohesive experience from start to finish.</p>
+          </label>
+          <label for="m-marketing">
+            <input type="checkbox" id="m-marketing" name="m-marketing">
+            <strong>Marketing</strong>
+            <p>We need creative ways to get people using this system! It isn't going to market itself.</p>
+          </label>
+          <label for="m-bizdev">
+            <input type="checkbox" id="m-bizdev" name="m-bizdev">
+            <strong>Business Development</strong>
+            <p>This is going to cost money and require support from RIT. We need someone to find resources and work with the administration to figure out how everything fits
+            together.</p>
+          </label>
+        </li>
+      </ul>
+
+      <div class="form">
+        <label for="why">So, why would you be an awesome module owner?</label>
+        <textarea name="why" id="why" placeholder="Go ahead, brag!"></textarea>
+
+        <label for="show">Show off stuff you've done</label>
+        <textarea name="show" id="show" placeholder="Links to personal sites, projects, GitHub profiles, etc"></textarea>
+      </div>
+      <div class="form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">RIT Email Address</label>
+        <input type="text" id="email" name="email">
+
+        <label for="year">Major and Year</label>
+        <input type="text" id="year" name="year">
+
+        <button type="submit">Submit!</button>
+        <br>
+        <br>
+      </div>
+    </form>
 
     <div id="email" style="display: none">
       <h3>Coming Soon!</h3>
