@@ -28,7 +28,7 @@ $(document).ready(function() {
         var info = $(this).serializeArray();
         console.log(info);
         $.post('submit.php', info, function() {
-            alert('Done!');
+            $('#open-div').html("Your submission has been sent. Thanks for applying! We'll get back to you within the next few weeks.");
         });
     });
 });
