@@ -14,6 +14,7 @@ a:visited:hover {
 .container {
   max-width: 1000px;
   margin: auto;
+  padding: 0 4em;
 }
 #intro {
   background-color: #d57d00;
