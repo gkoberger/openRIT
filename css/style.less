@@ -85,6 +85,25 @@ a, a:visited {
         font-size: 1.2em;
         font-weight: 200;
     }
+    #share {
+        text-shadow: 0pt 0pt;
+        font-weight: 100;
+        float: right;
+        margin-top: 33px;
+        a {
+            display: inline-block;
+            height: 21px;
+            margin: 0 0 0 5px;
+            text-indent: -99999px;
+            width: 25px;
+            &.share-fb {
+                background-image: url("../img/share-fb.png");
+            }
+            &.share-t {
+                background-image: url("../img/share-t.png");
+            }
+        }
+    }
 }
 
 #progress {
