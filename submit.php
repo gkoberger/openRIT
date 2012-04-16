@@ -14,7 +14,7 @@ if($_POST) {
 
     $file = date("m.d.y_h:i_a", $date);
 
-    $myFile = "saved/" . $_POST['email'] . "--" . $file . ".txt";
+    $myFile = "saved/f" . $_POST['email'] . "--" . $file . ".txt";
     $fh = fopen($myFile, 'a+') or die("can't open file");
     fwrite($fh, $message);
     fclose($fh);
