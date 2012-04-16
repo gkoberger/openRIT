@@ -10,5 +10,12 @@ if($_POST) {
     mail("gkoberger@gmail.com", "New Submission!",
         $message, "From:" . "gkoberger@gmail.com");
 
-    echo "sending $message";
+    $date = strtotime($_REQUEST['date'] . " UTC") + ($_REQUEST['offset'] * 60);
+
+    $file = date("m.d.y_h:i_a", $date);
+
+    $myFile = "saved/" . $_POST['email'] . "--" . $file . ".txt";
+    $fh = fopen($myFile, 'a+') or die("can't open file");
+    fwrite($fh, $message);
+    fclose($fh);
 }
