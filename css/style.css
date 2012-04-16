@@ -336,11 +336,12 @@ a:visited:hover {
   border-bottom: 1px dotted #AAAAAA;
   margin-bottom: 2em;
   padding-bottom: 2em;
+  overflow: hidden;
 }
 #faq .fb  > div,
 #faq .fb  > iframe {
   float: left;
-  margin-right: 1em;
+  margin-right: 3em;
 }
 #faq ul {
   padding: 0;
