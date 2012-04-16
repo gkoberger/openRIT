@@ -9,4 +9,6 @@ if($_POST) {
 
     mail("gkoberger@gmail.com", "New Submission!",
         $message, "From:" . "gkoberger@gmail.com");
+
+    echo "sending $message";
 }
