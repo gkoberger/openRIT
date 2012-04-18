@@ -60,6 +60,9 @@ a:visited:hover {
   text-indent: -99999px;
   width: 25px;
 }
+#intro #share a:hover {
+  opacity: 0.7;
+}
 #intro #share a.share-fb {
   background-image: url("../img/share-fb.png");
 }
